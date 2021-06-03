@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    double age, retire, result;
+
+    // create an object of Scanner class
+    Scanner input = new Scanner(System.in);
+
+
+    // ask users to enter numbers
+    System.out.println("What is your current age?: ");
+    age = input.nextDouble();
+    double year= 2021;
+    System.out.println("What age would you like to retire?: ");
+    retire = input.nextDouble();
+    result = retire - age;
+        System.out.println(" You have " + result + " years until you can retire");
+        System.out.println("It is 2021 so you can retire in " + (year+result));
+    input.close();
+
+  }
+}
